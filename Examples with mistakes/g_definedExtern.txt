@@ -1,0 +1,6 @@
+.text
+.extern bum
+	addgt r1, r2
+bum:
+	addal r3, r4
+.end

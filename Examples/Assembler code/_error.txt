@@ -1,0 +1,12 @@
+.data
+.global error
+_error:
+	moval r0, 16
+	moval *-2, r0
+	moval r0, 101
+	moval *-2, r0
+	moval r0, 114
+	moval *-2, r0
+	moval *-2, r0
+	iretal
+.end

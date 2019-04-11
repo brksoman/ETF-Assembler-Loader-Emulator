@@ -1,0 +1,6 @@
+.text
+	moval r1, r2
+.data
+	.char 1, 2, 3
+.bss
+	.skip 10

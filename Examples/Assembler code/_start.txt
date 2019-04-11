@@ -1,0 +1,8 @@
+.text
+.global _start
+.global _end
+.extern main
+_start:
+	callal &main
+_end:
+.end

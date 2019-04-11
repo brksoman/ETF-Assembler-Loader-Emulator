@@ -1,0 +1,5 @@
+.word 5
+
+.text
+	addal r1, r2
+.end

@@ -1,0 +1,7 @@
+.text
+jis:
+	moveq r1, r2
+	addgt r5, r6
+jis:
+	subne r2, r3
+.end

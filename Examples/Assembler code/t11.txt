@@ -1,0 +1,33 @@
+.data
+.extern step
+	.word 30
+cnt:
+	.word 20
+numbers:
+	.word 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+.text
+.global main
+.global cnt
+.global numbers
+.extern obrada
+main:
+init:	moval r3, cnt
+		moval r4, &numbers
+		moval r5, 0
+loop:
+	cmpal r3, r5
+		callgt &obrada
+	cmpal r3, r5
+		addgt r5, step
+		moveq r5, 30
+	
+	cmpal r5, *200
+		jmpne &loop
+		reteq
+
+.bss
+memory:
+	.skip 5
+	.global memory
+.end

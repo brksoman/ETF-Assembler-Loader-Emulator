@@ -1,0 +1,7 @@
+.text
+.global _timer
+_timer:
+	moval r0, 75
+	moval *-2, r0
+	iretal
+.end

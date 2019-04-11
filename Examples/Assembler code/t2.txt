@@ -1,0 +1,11 @@
+.text
+.global obrada
+.extern numbers
+obrada:
+	addal r5[numbers], r3
+	retal
+.data
+.global step
+step:
+	.word 2
+.end

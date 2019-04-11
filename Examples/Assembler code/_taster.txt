@@ -1,0 +1,9 @@
+.text
+.global _taster
+_taster:
+	moval r0, 58
+	moval *-2, r0
+	moval r0, *-4
+	moval *-2, r0
+	iretal
+.end

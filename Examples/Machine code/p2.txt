@@ -1,0 +1,17 @@
+300 11000011
+301 10101011
+302 00000000
+303 00000000
+304 11101001
+305 11100000
+306 00000010
+307 00000000
+
+0 UND 0 global 0
+1 .text 1 global 300
+2 obrada 1 global 300
+3 numbers 0 extern 0
+4 .data 4 global 306
+5 step 4 global 306
+
+0 302 absolute 2 3

@@ -1,0 +1,6 @@
+.data
+	.word 1, 2, 3
+	addgt r1, r2
+.text
+	moval r3, r4
+.end
